@@ -1,0 +1,210 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --height: 100px;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* COMMON */
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.flex-container {
+    display: flex;
+    gap: 1rem;
+}
+
+
+.container {
+    width:80%;
+    margin:0 auto;
+    max-width: 1000px;
+}
+
+/* HEADER */
+
+header {
+    height: var(--height);
+    background-color: hsl(24.71deg 100% 50%);
+    align-items: center;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index: 2;
+}
+
+nav {
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav-list {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.nav-list a {
+    color: white;
+}
+
+.logo-img {
+    width:150px;
+}
+.nav-icons {
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.nav-icons a {
+    color: white;
+}
+/* MAIN */
+
+main {
+    padding: calc( var(--height) + 20px) 0;
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+
+.col {
+    width: calc(95% / 3);
+    margin-top: 20px;
+    position: relative;
+}
+
+
+.hidden-photo {
+    display:none;
+}
+
+.img-container:hover .hidden-photo {
+    display: inline-block;
+}
+
+.img-container:hover .shown-photo {
+    display:none;
+}
+
+.current-price {
+    font-weight: bold;
+    color:red;
+    margin-right: 10px;
+}
+
+.full-price{
+    text-decoration: line-through;
+}
+
+
+.heart-container {
+    
+}
+.img-container {
+    position: relative;
+}
+
+.rectangle-container {
+    position: absolute;
+    left:0;
+    bottom:40px;
+}
+
+
+.rectangle {
+    display: inline-block;
+    min-width: 1.5rem;
+    color: white;
+    font-weight: bold;
+    line-height: 1.3rem;
+    padding-left: .8rem ;
+    padding-right: .8rem;
+    padding: .2rem .3rem; 
+}
+
+.sale {
+    background-color: red;
+    
+}
+
+.green-washing {
+    background-color: green;
+    margin-left: .3rem;
+}
+
+
+.img-heart {
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top:10px;
+    font-size: 2rem;
+    padding: .5rem;
+    color:black;
+}
+
+
+.img-heart:hover {
+    color:red;
+}
+
+
+
+/* FOOTER */
+
+footer {
+    min-height: 100px;
+    background-color: hsl(0deg 0% 10.2%);
+    color: white;
+}
+
+.footer-div {
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+footer a {
+    color:white;
+}
+
+.firm-name h4 {
+margin-bottom: 1rem;
+}
+
+.firm-name h4 {
+    font-size: 1.4rem;
+
+}
+.footer-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.icons-title {
+    margin-bottom: 1rem;
+}
+  
